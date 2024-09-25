@@ -46,6 +46,19 @@ The script reads the directory paths from a JSON configuration file. The default
 ```
 
 ## How to Use
+
+### Steps
+
+- **Ensure your environment has all the required libraries installed.**  
+  You can install them using the following command:
+  
+  ```bash
+  pip install -r requirements_KML_Manager.txt
+
+- **If you alter the file structure, ensure that you update any relative paths in the code accordingly.**
+
+- **Run the following aggregate script to execute the program:**
+
 ```
     import logging
     import autoroot

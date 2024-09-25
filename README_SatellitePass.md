@@ -58,6 +58,18 @@ The script reads settings from a JSON configuration file. The default path for t
 ```
 
 ## How to Use
+
+- **Ensure your environment has all the required libraries installed.**  
+  You can install them using the following command:
+  
+  ```bash
+  pip install -r requirements_SatellitePass.txt
+
+- **If you alter the file structure, ensure that you update any relative paths in the code accordingly.**
+
+- **Run the following aggregate script to execute the program:**
+
+
 ```
     import logging
     import autoroot
