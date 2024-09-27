@@ -1,7 +1,7 @@
 # Sentinel-2 KML Downloader and Manager
 
 ## Overview
-This repository contains scripts to manage the download, organization, and updating of Sentinel-2 KML files related to acquisition plans from https://sentinel.esa.int/web/sentinel/copernicus/sentinel-2/acquisition-plans. The main functionality is implemented in the KMLManager class, which downloads and sorts KML files into specified directories. Additionally, a script named test_main.py schedules and manages the execution of these tasks.
+This repository contains scripts to manage the download, organization, and updating of Sentinel-2 KML files related to acquisition plans from https://sentinel.esa.int/web/sentinel/copernicus/sentinel-2/acquisition-plans. The main functionality is implemented in the KMLManager class, which downloads and sorts KML files into specified directories. Additionally, a script named KML_Manager_main.py schedules and manages the execution of these tasks.
 
 ## Features
 - Download KML files
@@ -11,7 +11,7 @@ This repository contains scripts to manage the download, organization, and updat
 - install **requirements_KML_Manager.txt**
 
 ## Files
-### **1.** test_kml_manager_class.py
+### KML_Manager_class.py
 This script defines the KMLManager class, responsible for downloading, organizing, and updating KML files related to Sentinel-2 satellite passes.
 
 #### Key Functions:
@@ -23,7 +23,7 @@ This script defines the KMLManager class, responsible for downloading, organizin
 
 - **update_local_dataset():** Sorts the downloaded KML files into appropriate directories (S2A and S2B) based on their names.
 
-### **2.** test_main.py
+### KML_Manager_main.py
 This script runs the KML management process, logging its activities and handling configuration through a JSON file.
 
 #### Key Steps:
@@ -39,9 +39,9 @@ The script reads the directory paths from a JSON configuration file. The default
 ### Sample Configuration (config_KML_directories.json)
 ```
 {
-    "base_directory": "src/KML/KML_acquisition_plans/update",
-    "s2a_directory": "src/KML/KML_acquisition_plans/S2A",
-    "s2b_directory": "src/KML/KML_acquisition_plans/S2B"
+    "base_directory": "KML_acquisition_plans/update",
+    "s2a_directory": "KML_acquisition_plans/S2A",
+    "s2b_directory": "KML_acquisition_plans/S2B"
 }
 ```
 
@@ -50,10 +50,12 @@ The script reads the directory paths from a JSON configuration file. The default
 ### Steps
 
 - **Ensure your environment has all the required libraries installed.**  
-  You can install them using the following command:
+  You can install them using the following commands:
   
   ```bash
   pip install -r requirements_KML_Manager.txt
+
+  pip install -r requirements_SatellitePass.txt
 
 - **If you alter the file structure, ensure that you update any relative paths in the code accordingly.**
 
@@ -96,3 +98,4 @@ The script reads the directory paths from a JSON configuration file. The default
         SatellitePass_Main(config_file_path)
 ```
 
+- **You have the option to use the two parts of the project separately by running the scripts independently. Specifically, you can run KML_Manager_main.py (for downloading the KML files with the Sentinel satellite acquisition plans) and SatellitePass_Main.py (for finding the upcoming passes of the Sentinel satellites over a specific area).**

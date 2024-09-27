@@ -10,7 +10,7 @@ extract satellite pass data, and find observation times for a specified location
 
 def SatellitePass_Main(config_file_path: str = 'config_SatellitePass.json'):
     with open(config_file_path, 'r') as config_file:
-                    config = json.load(config_file)
+        config = json.load(config_file)
 
     # Extract latitude and longitude from the config
     latitude = config.get("latitude")

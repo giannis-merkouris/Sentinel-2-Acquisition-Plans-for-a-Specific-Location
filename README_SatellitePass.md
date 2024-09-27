@@ -51,7 +51,7 @@ The script reads settings from a JSON configuration file. The default path for t
 ### Sample Configuration (config_SatellitePass.json:)
 ```
 {
-    "base_kml_directory": "src/KML/KML_acquisition_plans/update",
+    "base_kml_directory": "KML_acquisition_plans/update",
     "latitude": "37.95",
     "longitude": "23.70"
 }
@@ -60,9 +60,11 @@ The script reads settings from a JSON configuration file. The default path for t
 ## How to Use
 
 - **Ensure your environment has all the required libraries installed.**  
-  You can install them using the following command:
+  You can install them using the following commands:
   
   ```bash
+  pip install -r requirements_KML_Manager.txt
+
   pip install -r requirements_SatellitePass.txt
 
 - **If you alter the file structure, ensure that you update any relative paths in the code accordingly.**
@@ -106,3 +108,5 @@ The script reads settings from a JSON configuration file. The default path for t
         # Run SatellitePass_Main
         SatellitePass_Main(config_file_path)
 ```
+
+- **You have the option to use the two parts of the project separately by running the scripts independently. Specifically, you can run KML_Manager_main.py (for downloading the KML files with the Sentinel satellite acquisition plans) and SatellitePass_Main.py (for finding the upcoming passes of the Sentinel satellites over a specific area).**
