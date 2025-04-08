@@ -6,6 +6,7 @@ The Satellite Pass Prediction project consists of two main components: a class d
 ## Features
 - Extracts info from KML files
 - Generates a GeoDataFrame
+- Supports multiple KML files
 - Retrieves observation information for the specified location
 
 ## Requirements

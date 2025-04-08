@@ -16,16 +16,19 @@ class KMLManager:
             base_directory: str = 'update',
             s2a_directory: str = 'S2A',
             s2b_directory: str = 'S2B',
+            s2c_directory: str = 'S2C'
             ):
         
         self.base_directory = base_directory
         self.s2a_directory = s2a_directory
         self.s2b_directory = s2b_directory
+        self.s2c_directory = s2c_directory
 
         # Ensure directories exist
         os.makedirs(self.base_directory, exist_ok=True)
         os.makedirs(self.s2a_directory, exist_ok=True)
         os.makedirs(self.s2b_directory, exist_ok=True)
+        os.makedirs(self.s2c_directory, exist_ok=True)
 
         # Set up logging
         #logging.basicConfig(filename='kml_manager.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -48,7 +51,7 @@ class KMLManager:
         KML_url = 'https://sentinel.esa.int/web/sentinel/copernicus/sentinel-2/acquisition-plans'
         base_url = 'https://sentinel.esa.int/'
         response = requests.get(KML_url)
-        sentinel_types = ['sentinel-2a', 'sentinel-2b']
+        sentinel_types = ['sentinel-2a', 'sentinel-2b', 'sentinel-2c']
         save_directory = self.base_directory
         os.makedirs(save_directory, exist_ok=True)
 
@@ -106,6 +109,8 @@ class KMLManager:
                     destination_path = os.path.join(self.s2a_directory, file_name)
                 elif 's2b' in file_name:
                     destination_path = os.path.join(self.s2b_directory, file_name)
+                elif 's2c' in file_name:
+                    destination_path = os.path.join(self.s2c_directory, file_name)
                 else:
                     logging.warning(f'Unexpected file name: {file_name}')
                     continue

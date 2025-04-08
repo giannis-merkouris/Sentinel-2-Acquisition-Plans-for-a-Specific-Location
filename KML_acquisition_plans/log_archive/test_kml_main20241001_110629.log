@@ -1,0 +1,15 @@
+2024-10-01 11:06:29,532 - INFO - Starting the scheduled task...
+2024-10-01 11:06:29,532 - INFO - Running scheduled task...
+2024-10-01 11:06:29,533 - INFO - Config found. Using directories: base=KML_acquisition_plans/update, S2A=KML_acquisition_plans/S2A, S2B=KML_acquisition_plans/S2B
+2024-10-01 11:06:30,147 - INFO - Response OK!
+2024-10-01 11:06:30,202 - INFO - Downloading 03 October - 21 October 2024 from https://sentinel.esa.int//documents/d/sentinel/s2a_mp_acq__kml_20241003t120000_20241021t150000
+2024-10-01 11:06:31,455 - ERROR - Failed to download s2a_mp_acq__kml_20241003t120000_20241021t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2a_mp_acq__kml_20241003t120000_20241021t150000: HTTP Error 404: 
+2024-10-01 11:06:31,498 - INFO - Downloading 19 September - 07 October 2024 from https://sentinel.esa.int//documents/d/sentinel/s2a_mp_acq__kml_20240919t120000_20241007t150000
+2024-10-01 11:06:33,248 - INFO - Successfully downloaded s2a_mp_acq__kml_20240919t120000_20241007t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2a_mp_acq__kml_20240919t120000_20241007t150000 to KML_acquisition_plans/update\s2a_mp_acq__kml_20240919t120000_20241007t150000.kml
+2024-10-01 11:06:33,255 - INFO - Downloading 26 September - 14 October 2024 from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20240926t120000_20241014t150000
+2024-10-01 11:06:35,765 - INFO - Successfully downloaded s2b_mp_acq__kml_20240926t120000_20241014t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20240926t120000_20241014t150000 to KML_acquisition_plans/update\s2b_mp_acq__kml_20240926t120000_20241014t150000.kml
+2024-10-01 11:06:35,765 - INFO - Downloading 12 September - 30 September 2024 from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20240912t120000_20240930t150000
+2024-10-01 11:06:37,663 - INFO - Successfully downloaded s2b_mp_acq__kml_20240912t120000_20240930t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20240912t120000_20240930t150000 to KML_acquisition_plans/update\s2b_mp_acq__kml_20240912t120000_20240930t150000.kml
+2024-10-01 11:06:37,696 - INFO - Successfully copied s2a_mp_acq__kml_20240919t120000_20241007t150000.kml to KML_acquisition_plans/S2A\s2a_mp_acq__kml_20240919t120000_20241007t150000.kml
+2024-10-01 11:06:37,702 - INFO - Successfully copied s2b_mp_acq__kml_20240912t120000_20240930t150000.kml to KML_acquisition_plans/S2B\s2b_mp_acq__kml_20240912t120000_20240930t150000.kml
+2024-10-01 11:06:37,709 - INFO - Successfully copied s2b_mp_acq__kml_20240926t120000_20241014t150000.kml to KML_acquisition_plans/S2B\s2b_mp_acq__kml_20240926t120000_20241014t150000.kml

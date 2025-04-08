@@ -18,10 +18,11 @@ def job(config_file_path):
             base_directory = config.get("base_directory")
             s2a_directory = config.get("s2a_directory")
             s2b_directory = config.get("s2b_directory")
-            logging.info(f'Config found. Using directories: base={base_directory}, S2A={s2a_directory}, S2B={s2b_directory}')
+            s2c_directory = config.get("s2c_directory")
+            logging.info(f'Config found. Using directories: base={base_directory}, S2A={s2a_directory}, S2B={s2b_directory}, S2C={s2c_directory}')
 
             # Create KMLManager with directories from config
-            kml_manager = KMLManager(base_directory, s2a_directory, s2b_directory)
+            kml_manager = KMLManager(base_directory, s2a_directory, s2b_directory, s2c_directory)
         except Exception as e:
             logging.error(f'Failed to read config file: {e}')
             # Fallback to default initialization if there's an error

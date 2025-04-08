@@ -38,7 +38,12 @@ class SatellitePassPrediction:
                 if hasattr(placemark, 'ExtendedData'):
                     for data_field in placemark.ExtendedData.Data:
                         data_name = data_field.get('name')
-                        data_value = data_field.value.text
+                        data_value = getattr(data_field, 'value', None)  # Check if 'value' exists
+                        if data_value is None:
+                            data_value = "Unknown"  # Assign default value if missing
+                        else:
+                            data_value = data_value.text  # Extract text if 'value' exists
+                        #data_value = data_field.value.text
                         data[data_name] = data_value
 
                 gdf_data.append(data)
@@ -94,5 +99,5 @@ class SatellitePassPrediction:
                     'ObservationTimeStart': row.get('ObservationTimeStart'),
                     'ObservationTimeStop': row.get('ObservationTimeStop')
                 })
-
+        
         return observation_info

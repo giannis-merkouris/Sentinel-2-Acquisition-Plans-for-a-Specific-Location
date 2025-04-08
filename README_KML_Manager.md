@@ -41,7 +41,8 @@ The script reads the directory paths from a JSON configuration file. The default
 {
     "base_directory": "KML_acquisition_plans/update",
     "s2a_directory": "KML_acquisition_plans/S2A",
-    "s2b_directory": "KML_acquisition_plans/S2B"
+    "s2b_directory": "KML_acquisition_plans/S2B",
+    "s2c_directory": "KML_acquisition_plans/S2C"
 }
 ```
 

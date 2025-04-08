@@ -1,0 +1,24 @@
+2025-02-15 15:14:47,690 - INFO - Starting the scheduled task...
+2025-02-15 15:14:47,690 - INFO - Running scheduled task...
+2025-02-15 15:14:47,691 - INFO - Config found. Using directories: base=KML_acquisition_plans/update, S2A=KML_acquisition_plans/S2A, S2B=KML_acquisition_plans/S2B, S2C=KML_acquisition_plans/S2C
+2025-02-15 15:14:47,709 - INFO - Deleted existing file: KML_acquisition_plans/update\s2a_mp_acq__kml_20241226t120000_20250121t150000.kml
+2025-02-15 15:14:47,714 - INFO - Deleted existing file: KML_acquisition_plans/update\s2b_mp_acq__kml_20250130t120000_20250217t150000.kml
+2025-02-15 15:14:47,715 - INFO - Deleted existing file: KML_acquisition_plans/update\s2b_mp_acq__kml_20250213t120000_20250303t150000.kml
+2025-02-15 15:14:47,717 - INFO - Deleted existing file: KML_acquisition_plans/update\s2c_mp_acq__kml_20250121t050000_20250210t080000.kml
+2025-02-15 15:14:47,718 - INFO - Deleted existing file: KML_acquisition_plans/update\s2c_mp_acq__kml_20250206t120000_20250224t150000.kml
+2025-02-15 15:14:48,130 - INFO - Response OK!
+2025-02-15 15:14:48,183 - INFO - Downloading 26 December - 21 January 2025 from https://sentinel.esa.int//documents/d/sentinel/s2a_mp_acq__kml_20241226t120000_20250121t150000
+2025-02-15 15:14:49,442 - INFO - Successfully downloaded s2a_mp_acq__kml_20241226t120000_20250121t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2a_mp_acq__kml_20241226t120000_20250121t150000 to KML_acquisition_plans/update\s2a_mp_acq__kml_20241226t120000_20250121t150000.kml
+2025-02-15 15:14:49,446 - INFO - Downloading 13 February - 3 March 2025 from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20250213t120000_20250303t150000
+2025-02-15 15:14:50,671 - INFO - Successfully downloaded s2b_mp_acq__kml_20250213t120000_20250303t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20250213t120000_20250303t150000 to KML_acquisition_plans/update\s2b_mp_acq__kml_20250213t120000_20250303t150000.kml
+2025-02-15 15:14:50,672 - INFO - Downloading 30 January - 17 February 2025 from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20250130t120000_20250217t150000
+2025-02-15 15:14:51,881 - INFO - Successfully downloaded s2b_mp_acq__kml_20250130t120000_20250217t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2b_mp_acq__kml_20250130t120000_20250217t150000 to KML_acquisition_plans/update\s2b_mp_acq__kml_20250130t120000_20250217t150000.kml
+2025-02-15 15:14:51,888 - INFO - Downloading 06 February - 24 February 2025 from https://sentinel.esa.int//documents/d/sentinel/s2c_mp_acq__kml_20250206t120000_20250224t150000
+2025-02-15 15:14:53,010 - INFO - Successfully downloaded s2c_mp_acq__kml_20250206t120000_20250224t150000.kml from https://sentinel.esa.int//documents/d/sentinel/s2c_mp_acq__kml_20250206t120000_20250224t150000 to KML_acquisition_plans/update\s2c_mp_acq__kml_20250206t120000_20250224t150000.kml
+2025-02-15 15:14:53,010 - INFO - Downloading 21 January - 10 February 2025 from https://sentinel.esa.int//documents/d/sentinel/s2c_mp_acq__kml_20250121t050000_20250210t080000
+2025-02-15 15:14:54,164 - INFO - Successfully downloaded s2c_mp_acq__kml_20250121t050000_20250210t080000.kml from https://sentinel.esa.int//documents/d/sentinel/s2c_mp_acq__kml_20250121t050000_20250210t080000 to KML_acquisition_plans/update\s2c_mp_acq__kml_20250121t050000_20250210t080000.kml
+2025-02-15 15:14:54,167 - INFO - Successfully copied s2a_mp_acq__kml_20241226t120000_20250121t150000.kml to KML_acquisition_plans/S2A\s2a_mp_acq__kml_20241226t120000_20250121t150000.kml
+2025-02-15 15:14:54,169 - INFO - Successfully copied s2b_mp_acq__kml_20250130t120000_20250217t150000.kml to KML_acquisition_plans/S2B\s2b_mp_acq__kml_20250130t120000_20250217t150000.kml
+2025-02-15 15:14:54,183 - INFO - Successfully copied s2b_mp_acq__kml_20250213t120000_20250303t150000.kml to KML_acquisition_plans/S2B\s2b_mp_acq__kml_20250213t120000_20250303t150000.kml
+2025-02-15 15:14:54,185 - INFO - Successfully copied s2c_mp_acq__kml_20250121t050000_20250210t080000.kml to KML_acquisition_plans/S2C\s2c_mp_acq__kml_20250121t050000_20250210t080000.kml
+2025-02-15 15:14:54,188 - INFO - Successfully copied s2c_mp_acq__kml_20250206t120000_20250224t150000.kml to KML_acquisition_plans/S2C\s2c_mp_acq__kml_20250206t120000_20250224t150000.kml
